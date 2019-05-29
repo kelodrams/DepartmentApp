@@ -4,7 +4,7 @@ import { StyleSheet,View,Text,TouchableHighlight } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
  
-const SignIn = (props) => {
+const AddRequiredMenu = (props) => {
   const { navigation } = props;
   return ( <View> 
     <TouchableHighlight onPress={()=>{navigation.navigate('SignUp')  }}>
@@ -22,8 +22,8 @@ const SignIn = (props) => {
 const SignUp = () => <Text>Signup</Text>;
  
 const AddRequired = createStackNavigator({
-  SignIn: {
-    screen: SignIn,
+  AddRequiredMenu: {
+    screen: AddRequiredMenu,
   },
   SignUp: { 
     screen: SignUp,

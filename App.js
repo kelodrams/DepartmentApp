@@ -4,17 +4,21 @@ import { createAppContainer } from 'react-navigation';
 
 //Modulos
 import { Menu } from './vista/menu/Menu'; 
+import { TextInput } from 'react-native-gesture-handler';
+import { AddRequireScreenRoute } from './vista/addRequired/AddRequireScreen';
 
  
 const MenuContainer = createAppContainer(Menu); 
+const AddingRequiredContainer = createAppContainer(AddRequireScreenRoute); 
+
 
 
 export default class App extends React.Component {  
   render() {
     return (
       <View style={styles.container} >
-         <MenuContainer/>
-        </View>
+          <AddingRequiredContainer/>
+      </View>
     );
   }
 }

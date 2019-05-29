@@ -21,7 +21,7 @@ const DirectoryCommunityContainer = createAppContainer(DirectoryCommunity);
 const AdvanceRequiredContainer = createAppContainer(AdvanceRequired);
 const RequiredRejectedContainer = createAppContainer(RequiredRejected);
  
-const SignIn = (props) => {
+const MenuScreen = (props) => {
   const { navigation } = props;
   return (  <View style={styles.container}>
      <View style={styles.directioner}>
@@ -52,8 +52,11 @@ const SignIn = (props) => {
 const SignUp = () => <Text>Signup</Text>;
  
 const Menu = createStackNavigator({
-  SignIn: {
-    screen: SignIn,
+  MenuScreen: {
+    screen: MenuScreen,
+    navigationOptions:{
+          header : null,
+      }
   },
   SignUp: { 
     screen: SignUp,
